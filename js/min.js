@@ -17,6 +17,7 @@ let secondItemText = `
 <br>
 <button type="button" onclick="document.write(document.body.innerHTML = thirdItemText)">Далі</button>
 `
+
 let thirdItemText = `
 <h1>Коментувати код можна:</h1>
 <ol>
@@ -27,4 +28,23 @@ let thirdItemText = `
 <button type="button" onclick="document.write(document.body.innerHTML = fourthItemText)">Далі</button>
 `
 
+let fourthItemText = `
+<h1>Стилі написання імен змінних:</h1>
+<ol>
+<li>camelCase</li>
+<li>snake_case</li>
+<li>Train-Case</li>
+<li>flatcase</li>
+<li>PascalCase</li>
+</ol>
+<br>
+<button type="button" onclick="import('./js/norm.js')">Продовжити</button>
+<button type="button" onclick="closeTab()">Вихід</button>
+`
 document.body.innerHTML = firstItemText;
+
+function closeTab() {
+    if (confirm("Бажаєте закрити вкладку?")) {
+        window.close();
+    }
+}
